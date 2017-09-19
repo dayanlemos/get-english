@@ -1,0 +1,33 @@
+{
+  "name": "get-english",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Dayan Lemos <dayan-lemos@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dayanlemos/get-english",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "alertifyjs": "^1.0.11",
+    "angular": "1.6.5",
+    "jquery-slimscroll": "^1.3.8",
+    "metisMenu": "metismenu#^2.7.0",
+    "oclazyload": "^1.1.0",
+    "angular-ui-router": "^1.0.6",
+    "angular-bootstrap": "^2.5.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
+  }
+}

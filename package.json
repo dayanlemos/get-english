@@ -1,0 +1,26 @@
+{
+  "name": "get-english",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayanlemos/get-english.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayanlemos/get-english/issues"
+  },
+  "homepage": "https://github.com/dayanlemos/get-english#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "connect": "^3.6.3",
+    "serve-static": "^1.12.4"
+  }
+}

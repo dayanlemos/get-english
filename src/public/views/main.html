@@ -1,0 +1,112 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h1>
+                    Irregular Verbs
+                </h1>
+                <small>
+                    Fill the blanks and hit Enter or Tab to check your answer
+                </small>
+                <small>
+                    {{finalResult}}
+                </small>
+
+                <div class="widget style1 bg-success yellow-shadow" ng-show="finalResult == 1">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+                            <span> Your score </span>
+
+                            <h2 class="score-value font-bold">0 Pts</h2>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 class="font-bold">Congratulations!</h2>
+                            <small>You have finished with a great score! You're ready to do the next challenge.</small>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <i class="fa fa-trophy fa-5x" style="color: #F8F87F"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget style1 bg-warning yellow-shadow" ng-show="finalResult == 2">
+                    <div class="row">
+                        <div class="col-xs-4 text-left">
+                            <span> Your score </span>
+
+                            <h2 class="score-value font-bold">0 Pts</h2>
+                        </div>
+                        <div class="col-xs-4">
+                            <h2 class="font-bold">Not so bad!</h2>
+                            <small>You have finished with a medium score! You should do this challenge again.</small>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <i class="fa fa-star-half-o fa-5x" style="color: #F8F87F"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget style1 bg-danger yellow-shadow" ng-show="finalResult == 3">
+                    <div class="row">
+                        <div class="col-xs-4 text-left">
+                            <span> Your score </span>
+
+                            <h2 class="score-value font-bold">0 Pts</h2>
+                        </div>
+                        <div class="col-xs-4">
+                            <h2 class="font-bold">Do it again!</h2>
+                            <small>You have finished with a low score! You should do this challenge again.</small>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            <i class="fa fa-meh-o fa-5x"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <br><br>
+
+            <div class="ibox">
+                <div class="ibox-title font-bold">
+                    <div class="row">
+                        <div class="col-sm-4">Infinitive</div>
+                        <div class="col-sm-4">Simple Past</div>
+                        <div class="col-sm-4">Past Participle</div>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="row margin-b-10" ng-repeat="verb in irregularVerbs">
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control border-radius-5" ng-keydown="checkAnswer($event, verb, 'Infinitive', verb.inputInfinitive, verb.infinitive)" ng-model="verb.inputInfinitive" required disabled ng-value="verb.infinitive">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control border-radius-5" ng-keydown="checkAnswer($event, verb, 'PastSimple', verb.inputPastSimple, verb.pastSimple)" ng-model="verb.inputPastSimple" required ng-disabled="verb.statusPastSimple" ng-class="{'input-right': verb.statusPastSimple == 1 , 'input-right2': verb.statusPastSimple == 2}">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control border-radius-5" ng-keydown="checkAnswer($event, verb, 'PastParticiple', verb.inputPastParticiple, verb.pastParticiple)" ng-model="verb.inputPastParticiple" required ng-disabled="verb.statusPastParticiple" ng-class="{'input-right': verb.statusPastParticiple == 1, 'input-right2': verb.statusPastParticiple == 2}">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="widget style1 gray-bg score">
+    <div class="row">
+        <div class="col-xs-12 text-right">
+            <span> Your score </span>
+
+            <h2 class="score-value font-bold">0 Pts</h2>
+        </div>
+    </div>
+</div>

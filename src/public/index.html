@@ -1,0 +1,73 @@
+<!--
+* INSPINIA - Responsive Admin Theme
+* Version 2.6
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="inspinia">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Font awesome -->
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Bootstrap and Fonts -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link id="loadBefore" href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Main view  -->
+<div ui-view></div>
+
+
+<!-- jQuery and Bootstrap -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+
+<!--Alertify.js-->
+<script src="bower_components/alertifyjs/dist/js/alertify.js"></script>
+<link rel="stylesheet" href="bower_components/alertifyjs/dist/css/alertify.css">
+
+<!-- MetsiMenu -->
+<script src="bower_components/metisMenu/dist/metisMenu.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Peace JS -->
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+
+<!-- Main Angular scripts-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<!-- Anglar App Script -->
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/controllers.js"></script>
+
+</body>
+</html>
