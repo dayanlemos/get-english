@@ -1,5 +1,5 @@
 # get-english
-English Language training platform
+English Language training platform - get-english.com
 
 # Commands to download and run the application
 
